@@ -10,7 +10,7 @@ print ("2. Círculo\n")
 print ("3. Triángulo\n")
 n = int(input("Ingrese la opción: "))
 
-def area_cuadrado():
+def areaCuadrado():
     L = int(input('Ingrese el lado: '))
     area = L ** 2
     return print('El area del cuadrado es: ', area)
@@ -21,10 +21,18 @@ def AreaTriangulo():
     area = b * h / 2
     return print('El area del triangulo es: ', area)
 
+def areaCirculo():
+    rad = int(input("Ingrese el area del circulo: "))
+    pi=3.14
+    area =pi*(rad**2)
 
+    return print("El Area del circulo es: ", area)
 
 if n == 1:
-    area_cuadrado()
+    areaCuadrado()
+
+if n == 2:
+    areaCirculo()
 
 if n==3:
     AreaTriangulo();
