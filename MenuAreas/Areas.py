@@ -15,6 +15,17 @@ def area_cuadrado():
     area = L ** 2
     return print('El area del cuadrado es: ', area)
 
+def AreaTriangulo():
+    b = int(input('Ingrese la base: '))
+    h = int(input('Ingrese la altura: '))
+    area = b * h / 2
+    return print('El area del triangulo es: ', area)
+
+
+
 if n == 1:
     area_cuadrado()
+
+if n==3:
+    AreaTriangulo();
 
